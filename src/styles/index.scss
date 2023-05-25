@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-primary {
+  font-family: Calibri, Arial, sans-serif; /* Основний шрифт та його фолбеки */
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #00000080;
+}
+
+.heading-primary span {
+  font-family: system-ui, sans-serif; /* Фолбек-шрифт системи */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  border: 2px solid #b7faca;
+
+  &:hover {
+    background-color: #45a049;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    border-color: #4caf50;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
