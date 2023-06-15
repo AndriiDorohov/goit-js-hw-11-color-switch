@@ -1,6 +1,6 @@
-# Переключатель цветов
+# Color switch
 
-Есть массив цветов в hex-формате и кнопки `Start` и `Stop`.
+There is an array of colors in hex format and buttons `Start` and `Stop`.
 
 ```html
 <button type="button" data-action="start">Start</button>
@@ -18,15 +18,15 @@ const colors = [
 ];
 ```
 
-Напиши скрипт, который после нажатия кнопки `Start`, раз в секунду меняет цвет
-фона `body` на случайное значение из массива используя инлайн-стиль. При нажатии
-на кнопку `Stop`, изменение цвета фона должно останавливаться.
+Write a script that, after pressing the `Start` button, changes
+the background color of the `body` once a second to a random value from the array using an inline style. When the button
+is clicked `Stop`, the background color change should stop.
 
-> ⚠️ Учти, на кнопку `Start` можно нажать бесконечное количество раз. Сделай
-> так, чтобы пока изменение темы запушено, кнопка `Start` была не активна.
+> ⚠️ Keep in mind that the `Start` button can be pressed an infinite number of times. Do It
+> > so that while the theme change is started, the 'Start` button is inactive.
 
-Для генерации случайного числа (индекс элемента массива цветов), используй
-функцию `randomIntegerFromInterval`.
+To generate a random number (the index of an element of an array of colors), use
+the `randomIntegerFromInterval` function.
 
 ```js
 const randomIntegerFromInterval = (min, max) => {
